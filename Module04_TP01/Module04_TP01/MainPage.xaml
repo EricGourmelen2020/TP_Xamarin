@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Module04_TP01.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" BackgroundColor="#58B0F0" Padding="10,25">
+            <Label HorizontalOptions="Start" Text="Nouveau" TextColor="White"></Label>
+            <Label HorizontalOptions="CenterAndExpand" Text="Accueil" TextColor="White"></Label>
+            <Label HorizontalOptions="End" Text="Rechercher" TextColor="White"></Label>
+        </StackLayout>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" Margin="15,5">
+                    <BoxView WidthRequest="75" BackgroundColor="Black"></BoxView>
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Label HorizontalOptions="Start" Text="Nom"></Label>
+                            <Label HorizontalOptions="Start" Text="Identifiant"></Label>
+                            <Label HorizontalOptions="EndAndExpand" Text="date"></Label>
+                        </StackLayout>
+                        <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet diam quam. Phasellus non consequat est. Nullam mattis pulvinar placerat. Maecenas faucibus non quam eget dictum.</Label>
+                    </StackLayout>
+                    
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="5">
+                    <Label HorizontalOptions="CenterAndExpand" Text="répondre"></Label>
+                    <Label HorizontalOptions="CenterAndExpand" Text="Retweet"></Label>
+                    <Label HorizontalOptions="CenterAndExpand" Text="Favoris"></Label>
+                </StackLayout>
+                <StackLayout HeightRequest="2" BackgroundColor="Gray"></StackLayout>
+            </StackLayout>
+            
+        </ScrollView>
+        <StackLayout Orientation="Horizontal" HeightRequest="75">
+            <Button HorizontalOptions="FillAndExpand" Text="Fil" TextColor="Gray"></Button>
+            <Button HorizontalOptions="FillAndExpand" Text="Notification" TextColor="Gray"></Button>
+            <Button HorizontalOptions="FillAndExpand" Text="Message" TextColor="Gray"></Button>
+            <Button HorizontalOptions="FillAndExpand" Text="Moi" TextColor="Gray"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
