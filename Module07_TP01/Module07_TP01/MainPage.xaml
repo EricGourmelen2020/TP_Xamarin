@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Module07_TP01.MainPage">
+
+    <StackLayout>
+        <ContentView BackgroundColor="#58B0F0">
+            <StackLayout Orientation="Horizontal" Margin="10, 25">
+                <ImageButton Source="pencil.png" WidthRequest="25"></ImageButton>
+                <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" TextColor="White"></Label>
+                <ImageButton Source="search.png" WidthRequest="25"></ImageButton>
+            </StackLayout>
+        </ContentView>
+        <StackLayout Orientation="Vertical">
+            <ContentView BackgroundColor="#58B0F0"></ContentView>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></ScrollView>
+        </StackLayout>
+        <StackLayout Orientation="Vertical">
+            <ContentView BackgroundColor="#58B0F0"></ContentView>
+            <StackLayout x:Name="form" IsVisible="true" Orientation="Vertical">
+                <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
+                <Entry x:Name="id" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
+                <Entry x:Name="mdp" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
+                <StackLayout Orientation="Horizontal">
+                    <Switch x:Name="memo"></Switch>
+                    <Label Text="Mémoriser mes informations"></Label>
+                </StackLayout>
+                <Label x:Name="error" TextColor="Salmon" VerticalOptions="FillAndExpand" HorizontalOptions="Center" IsVisible="false"></Label>
+                <Button Text="Se connecter" Clicked="Connection_Clicked" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+            <ScrollView x:Name="scroll" IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                        <Image Margin="10" WidthRequest="75" Aspect="AspectFit" Source="https://picsum.photos/50/50/?random"></Image>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Cedric" TextColor="Black"></Label>
+                                <Label Text="@cedricmillauriaux" TextColor="Black"></Label>
+                                <Label Text="50s" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+                            </StackLayout>
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. " TextColor="Black"></Label>
+                            <StackLayout Orientation="Horizontal">
+                                <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                                <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                                <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

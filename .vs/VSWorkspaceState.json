@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Modulte05_TP01",
-    "\\Modulte05_TP01\\Modulte05_TP01"
+    "\\Module05_TP01",
+    "\\Module05_TP01\\Modulte05_TP01.Android",
+    "\\Module05_TP01\\Modulte05_TP01.UWP",
+    "\\Module06_TP01\\Module06_TP01"
   ],
-  "SelectedNode": "\\Modulte05_TP01\\Modulte05_TP01\\Modulte05_TP01.csproj",
+  "SelectedNode": "\\Module05_TP01\\Modulte05_TP01.UWP\\favorite.png",
   "PreviewInSolutionExplorer": false
 }
